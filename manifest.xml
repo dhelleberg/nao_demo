@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<package version="0.0.0" uuid="naodemo-081753">
+ <names>
+  <name lang="de_DE">NaoDemo</name>
+  <name lang="en_US">NaoDemo</name>
+ </names>
+ <supportedLanguages>
+  <language>en_US</language>
+  <language>de_DE</language>
+ </supportedLanguages>
+ <descriptionLanguages>
+  <language>en_US</language>
+  <language>de_DE</language>
+ </descriptionLanguages>
+ <contents>
+  <behaviorContent path="behavior_1">
+   <nature>solitary</nature>
+   <permissions/>
+  </behaviorContent>
+ </contents>
+</package>

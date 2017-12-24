@@ -1,0 +1,8 @@
+topic: ~hello()
+language: enu
+
+concept:(hallo) [hallo hi hey "good morning"]
+concept:(bye) [bye goodbye "bye bye" "tata" "see you" adios cheerio "so long" farewell "have a nice day"]
+
+u:(~hallo) ~hallo
+u:(~bye) ~bye

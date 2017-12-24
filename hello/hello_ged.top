@@ -1,0 +1,26 @@
+topic: ~hello()
+language: ged
+
+# Defining extra concepts out of words or group of words
+concept:(hallo) [Hallo hi hey "guten morgen"]
+concept:(ja) [ja "ja klar" sicher super OK! Klaro! "sicher doch" gerne]
+concept:(nein) [nein nope "sicher nicht" "auf keinen Fall"]
+concept:(wie) ["wie geht es dir?"]
+concept:(auf) ["steh auf" aufstehen "kannst du aufstehen"]
+concept:(sitzen) ["setz dich" hinsetzen "kannst du dich hinsetzen"]
+concept:(laufenvor) ["lauf vor" laufen "lauf vorwärts"]
+concept:(laufzurueck) ["lauf wieder zurück" zurück "geh zurück"]
+concept:(tanzen) ["kannst du tanzen" tanze tanz]
+
+
+# Catching inputs and triggering outputs
+#u:(e:onStart) $onStopped=1
+
+# Replying to speech
+u:(~hallo) ~hallo
+
+u:(~auf) ~ja $stand=1
+u:(~sitzen) ~ja $sit=1
+u:(~laufenvor) ~ja $moveForward=1
+u:(~laufzurueck) ~ja $moveBack=1 $onStopped=1
+u:(~tanzen) "tanzen!" $dance="gangamstyle-c1ba67/GangamStyle"
